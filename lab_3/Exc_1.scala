@@ -2,6 +2,8 @@
 // def sum(l: List[Option[Int]]): Option[Int] = /* ... */
 // "sumującą”" listę opcjonalnych wartości całkowitych. Wynik powinien mieć wartość None wtedy i tylko wtedy, gdy wszystkie elementy listy l będą miały wartość None. W definicji skorzystaj z rekurencji ogonowej i "dopasowania wzorca".
 
+package Exc_1
+
 import scala.annotation.tailrec
 object Main extends App {
   def sum(l: List[Option[Int]]): Option[Int] = {
