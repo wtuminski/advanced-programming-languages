@@ -19,10 +19,13 @@ object Main extends App {
     ): (List[A], List[A]) = {
       list match {
         case Nil => (evenList, oddList)
-        case listH :: listT if (index % 2 == 0) =>
-          helper(listT, evenList :+ listH, oddList, index + 1)
-        case listH :: listT if (index % 2 != 0) =>
-          helper(listT, evenList, oddList :+ listH, index + 1)
+        case _ =>
+          index % 2 match {
+            case 0 =>
+              helper(list.tail, evenList :+ list.head, oddList, index + 1)
+            case _ =>
+              helper(list.tail, evenList, oddList :+ list.head, index + 1)
+          }
       };
     };
     return helper(list);
