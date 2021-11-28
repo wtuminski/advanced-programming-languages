@@ -3,7 +3,7 @@
 // która zwróci najmniejszą nieujemną liczbę całkowitą, która nie występuje w zbiorze set.
 // Przykład:
 // Dla: set = Set(-3, 0, 1, 2, 5, 6), funkcja powinna zwrócić: 3.
-
+package Exc_1
 object Main extends App {
   def minNotContained(set: Set[Int]): Int = {
     val minInt = set.toList
