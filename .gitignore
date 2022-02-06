@@ -46,3 +46,6 @@ bin/
 *.class
 .metals/metals.lock.db
 .metals/metals.lock.db
+
+# 
+*/labAdd3/*
